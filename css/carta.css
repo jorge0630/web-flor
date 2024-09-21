@@ -1,0 +1,39 @@
+body {
+    background-color: #f9f9f9; /* Color de fondo de la página */
+    font-family: "Sofadi One", system-ui; /* Tipo de fuente */
+}
+
+.carta {
+    font-family: Sofadi One;
+    font-size: 23x;
+    max-width: 600px; /* Ancho máximo de la carta */
+    margin: 20px auto; /* Centrado horizontal */
+    padding: 20px; /* Espaciado interno */
+    border: 10px solid transparent; /* Borde transparente para el fondo */
+    background-image: url('ruta-a-tu-imagen-de-flores.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px; /* Esquinas redondeadas */
+    position: relative; /* Para el uso de pseudo-elementos */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+}
+
+.carta::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid yellow; /* Color del marco */
+    border-radius: 15px; /* Esquinas redondeadas del marco */
+    z-index: -1; /* Coloca el marco detrás del contenido */
+}
+
+.sofadi-one-regular {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
